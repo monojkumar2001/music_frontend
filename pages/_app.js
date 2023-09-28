@@ -46,7 +46,9 @@ function MyApp({ Component, pageProps }) {
 		AOS.init();
 	}, [logout]);
 	
-
+	if (typeof window !== 'undefined') {
+		// Access localStorage here
+	  }
 	return (
 		<div>
 			<Head>
